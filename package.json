@@ -1,0 +1,23 @@
+{
+  "name": "jn-csablog",
+  "version": "1.0.0",
+  "description": "- Go to settings and configure pages, deploy from the branch, and then select the root folder. IF YOU DO NOT DO THIS YOUR PAGE WILL NOT BUILD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jyustin/JN-CSAblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jyustin/JN-CSAblog/issues"
+  },
+  "homepage": "https://github.com/Jyustin/JN-CSAblog#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
