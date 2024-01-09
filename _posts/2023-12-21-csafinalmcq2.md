@@ -3,7 +3,7 @@ toc: true
 comments: true
 layout: post
 title: CSA MCQ review DECEMBER
-description: I <3 mares (im going insane plz help)
+description: NOOO
 categories: [C1.0]
 courses: { compsci: {week: 0} }
 type: hacks
