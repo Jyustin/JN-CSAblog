@@ -5,8 +5,8 @@ layout: post
 title: SASS hacks
 description: for importing in css from sass build
 categories: [C1.0]
-courses: { compsci: {week: 0} }
-type: hacks
+courses: { compsci: {week: 1} }
+type: Plans
 ---
 
 ## Hacks
