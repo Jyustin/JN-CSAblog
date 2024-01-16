@@ -6,6 +6,6 @@ Unit1:
   end: 3
 Unit2:
   title: other work
-  description: anything that isn't a lesson or related to lessons 
+  description: anything that isn't very important or will rarely be referred to
   start: 4
   end: 7

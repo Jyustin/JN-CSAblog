@@ -5,8 +5,8 @@ layout: post
 title: CSA MCQ review TRI 1
 description: what should I review?
 categories: [C1.0]
-courses: { compsci: {week: 0} }
-type: hacks
+courses: { compsci: {row: 0} }
+type: APCSA
 ---
 
 # CSA MCQ SCORE
