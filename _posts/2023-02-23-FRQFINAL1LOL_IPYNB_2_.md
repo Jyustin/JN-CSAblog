@@ -18,7 +18,7 @@ You will write three static methods, all of which are in a single enclosing clas
 ### my ans to A:
 
 
-```java
+```Java
 // Returns the sum of the entries in the one-dimensional array arr.
 
 public static int arraySum (int [ ] arr) {
@@ -36,7 +36,7 @@ public static int arraySum (int [ ] arr) {
 ### my ans to B:
 
 
-```java
+```Java
 // Returns a one-dimensional array in which the entry at index k is the sum of
 // the entries of row k of the two-dimensional array arr2D.
 
@@ -61,7 +61,7 @@ Complete method isDiverse below.
 ### my ans to C:
 
 
-```java
+```Java
 // Returns true if all rows in arr2D have different row sums;
 //false otherwise.
 
@@ -78,6 +78,67 @@ public static boolean isDiverse(int [ ] [ ] arr2D) {
 }
 ```
 
+# actual answer compiled into running code
+
+
+```Java
+public class ArrayOperations {
+
+    // Method to calculate the sum of elements in a 1D array
+    public static int arraySum(int[] arr) {
+        int sum = 0;
+        for (int elem : arr) {
+            sum += elem;
+        }
+        System.out.println(sum);
+        return sum;
+    }
+
+    // Method to calculate the sums of rows in a 2D array
+    public static int[] rowSums(int[][] arr2D) {
+        int[] sums = new int[arr2D.length]; // Initialize an array to store row sums
+        int rowNum = 0;
+        for (int[] row : arr2D) {
+            sums[rowNum] = arraySum(row); // Calculate sum of each row and store in sums array
+            rowNum++;
+        }
+        return sums;
+
+    }
+
+    // Method to check if a 2D array is diverse
+    public static boolean isDiverse(int[][] arr2D) {
+        int[] sums = rowSums(arr2D); // Get sums of rows using rowSums method
+        for (int i = 0; i < sums.length; i++) {
+            for (int j = i + 1; j < sums.length; j++) {
+                if (sums[i] == sums[j]) { // If any two sums are equal, the array is not diverse
+                    return false;
+                }
+            }
+        }
+        return true; // If no two sums are equal, the array is diverse
+    }
+
+    public static void main(String[] args) {
+        int[][] array2D = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        System.out.println("Array is diverse: " + isDiverse(array2D));
+    }
+}
+ArrayOperations.main(null);
+
+```
+
+    6
+    15
+    24
+    Array is diverse: true
+
+
 # FRQ reflection
 
 This FRQ is a Array and 2d array FRQ, as it sees if you know how to summate rows in an array and a 2d array, with the 3rd question needing both skills.
@@ -85,3 +146,5 @@ This FRQ is a Array and 2d array FRQ, as it sees if you know how to summate rows
 Key algorithm: The key algorithms are the for loops required for traversal of arrays. Without these, you cannot solve the problem.
 
 this connects to the skill the FRQ tests, which is using traversal of arrays to find sums. 
+
+
