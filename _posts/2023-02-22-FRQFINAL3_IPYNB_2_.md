@@ -13,7 +13,7 @@ type: APCSA
 A two-dimensional array of integers in which most elements are zero is called a sparse array. Because most elements have a value of zero, memory can be saved by storing only the non-zero values along with their row and column indexes. The following complete SparseArrayEntry class is used to represent non-zero elements in a sparse array. A SparseArrayEntry object cannot be modified after it has been constructed.
 
 
-```java
+```Java
 public class SparseArrayEntry
 {
  /** The row index and column index for this entry in the sparse array */
@@ -47,7 +47,7 @@ of which represents one of the non-zero elements in the array. The entries repre
 stored in the list in no particular order. Each non-zero element is represented by exactly one entry in the list.
 
 
-```java
+```Java
 public class SparseArray
 {
  /** The number of rows and columns in the sparse array. */
@@ -89,7 +89,7 @@ Complete method getValueAt below.
 # my ans
 
 
-```java
+```Java
 public int getValueAt(int row, int col)
  { 
     return entries[row][col];
@@ -111,7 +111,7 @@ The sample object sparse from the beginning of the question is repeated for your
 # my ans
 
 
-```java
+```Java
  /** Removes the column col from the sparse array.
 * Precondition: 0  col < getNumCols()
  */
@@ -129,82 +129,89 @@ public void removeColumn(int col)
 # actual answer compiled into running code:
 
 
-```java
+```Java
 import java.util.ArrayList;
 import java.util.List;
 
-public class SparseArrayEntry {
-    /** The row index and column index for this entry in the sparse array */
+public class SparseArrayExample {
+
+    public static void main(String[] args) {
+        // Example run
+        SparseArray sparseArray = new SparseArray(3, 4);
+        sparseArray.setValueAt(0, 1, 5);
+        sparseArray.setValueAt(1, 2, 3);
+        sparseArray.setValueAt(2, 3, 7);
+
+        System.out.println("Value at (0, 1): " + sparseArray.getValueAt(0, 1)); // Output: 5
+        System.out.println("Value at (1, 2): " + sparseArray.getValueAt(1, 2)); // Output: 3
+        System.out.println("Value at (2, 3): " + sparseArray.getValueAt(2, 3)); // Output: 7
+
+        sparseArray.removeColumn(2);
+
+        System.out.println("After removing column 2:");
+        System.out.println("Value at (0, 1): " + sparseArray.getValueAt(0, 1)); // Output: 5
+        // Column 2 is removed, so this should return 0
+        System.out.println("Value at (1, 2): " + sparseArray.getValueAt(1, 2)); // Output: 0
+        System.out.println("Value at (2, 2): " + sparseArray.getValueAt(2, 2)); // Output: 7
+    }
+}
+
+class SparseArrayEntry {
     private int row;
     private int col;
-    /** The value of this entry in the sparse array */
     private int value;
 
-    /** Constructs a SparseArrayEntry object that represents a sparse array element
-     * with row index r and column index c, containing value v.
-     */
     public SparseArrayEntry(int r, int c, int v) {
         row = r;
         col = c;
         value = v;
     }
 
-    /** Returns the row index of this sparse array element. */
     public int getRow() {
         return row;
     }
 
-    /** Returns the column index of this sparse array element. */
     public int getCol() {
         return col;
     }
 
-    /** Returns the value of this sparse array element. */
     public int getValue() {
         return value;
     }
 }
 
-public class SparseArray {
-    /** The number of rows and columns in the sparse array. */
+class SparseArray {
     private int numRows;
     private int numCols;
-    /** The list of entries representing the non-zero elements of the sparse array. Entries are stored in the
-     * list in no particular order. Each non-zero element is represented by exactly one entry in the list.
-     */
     private List<SparseArrayEntry> entries;
 
-    /** Constructs an empty SparseArray. */
-    public SparseArray() {
-        entries = new ArrayList<SparseArrayEntry>();
+    public SparseArray(int rows, int cols) {
+        numRows = rows;
+        numCols = cols;
+        entries = new ArrayList<>();
     }
 
-    /** Returns the number of rows in the sparse array. */
     public int getNumRows() {
         return numRows;
     }
 
-    /** Returns the number of columns in the sparse array. */
     public int getNumCols() {
         return numCols;
     }
 
-    /** Returns the value of the element at row index row and column index col in the sparse array.
-     * Precondition: 0 <= row < getNumRows()
-     *               0 <= col < getNumCols()
-     */
     public int getValueAt(int row, int col) {
         for (SparseArrayEntry e : entries) {
             if (e.getRow() == row && e.getCol() == col) {
                 return e.getValue();
             }
         }
-        return 0; // Default value if no matching entry found
+        return 0;
     }
 
-    /** Removes the column col from the sparse array.
-     * Precondition: 0 <= col < getNumCols()
-     */
+    public void setValueAt(int row, int col, int value) {
+        entries.add(new SparseArrayEntry(row, col, value));
+    }
+
     public void removeColumn(int col) {
         int i = 0;
         while (i < entries.size()) {
@@ -218,12 +225,21 @@ public class SparseArray {
                 i++;
             }
         }
-        numCols--; // Decrease the total number of columns
+        numCols--;
     }
-    // There may be instance variables, constructors, and methods that are not shown.
 }
 
+SparseArrayExample.main(null);
 ```
+
+    Value at (0, 1): 5
+    Value at (1, 2): 3
+    Value at (2, 3): 7
+    After removing column 2:
+    Value at (0, 1): 5
+    Value at (1, 2): 0
+    Value at (2, 2): 7
+
 
 # reflection
 

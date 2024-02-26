@@ -135,6 +135,30 @@ public class GroupList {
         }
         return false; // If not found in any group, return false
     }
+
+    // Example run demonstrating usage
+    public static void main(String[] args) {
+        // Create Range instances and add them to a GroupList
+        GroupList groupList = new GroupList();
+        groupList.addGroup(new Range(1, 10));
+        groupList.addGroup(new Range(20, 30));
+
+        // Test numbers for containment
+        int[] testNumbers = {5, 15, 25};
+        for (int num : testNumbers) {
+            if (groupList.contains(num)) {
+                System.out.println(num + " is contained in at least one group.");
+            } else {
+                System.out.println(num + " is not contained in any group.");
+            }
+        }
+    }
 }
 
+GroupList.main(null);
 ```
+
+    5 is contained in at least one group.
+    15 is not contained in any group.
+    25 is contained in at least one group.
+

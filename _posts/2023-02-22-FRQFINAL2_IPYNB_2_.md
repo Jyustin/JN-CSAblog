@@ -65,8 +65,11 @@ public class HiddenWord {
     public String getHint(String guess) {
         String hint = "";
 
+        // Ensure the guess length does not exceed the hidden word length
+        int maxLength = Math.min(guess.length(), word.length());
+
         // Loop through each character in the guess
-        for (int i = 0; i < guess.length(); i++) {
+        for (int i = 0; i < maxLength; i++) {
             // Check if the character in the guess matches the character in the same position in the hidden word
             if (guess.substring(i, i + 1).equals(word.substring(i, i + 1))) {
                 hint += guess.substring(i, i + 1); // If match, append the character to hint
@@ -79,9 +82,30 @@ public class HiddenWord {
 
         return hint;
     }
+
+    public static void main(String[] args) {
+        // Example run
+        HiddenWord hiddenWord = new HiddenWord("JAVA");
+        String guess1 = "APPLE";
+        String guess2 = "JUMP";
+        
+        System.out.println("Guess: " + guess1);
+        System.out.println("Hint: " + hiddenWord.getHint(guess1));
+        
+        System.out.println("Guess: " + guess2);
+        System.out.println("Hint: " + hiddenWord.getHint(guess2));
+    }
 }
 
+HiddenWord.main(null);
+
 ```
+
+    Guess: APPLE
+    Hint: +***
+    Guess: JUMP
+    Hint: J***
+
 
 # FRQ reflection
 
