@@ -13,7 +13,7 @@ type: APCSA
 A two-dimensional array of integers in which most elements are zero is called a sparse array. Because most elements have a value of zero, memory can be saved by storing only the non-zero values along with their row and column indexes. The following complete SparseArrayEntry class is used to represent non-zero elements in a sparse array. A SparseArrayEntry object cannot be modified after it has been constructed.
 
 
-```Java
+```java
 public class SparseArrayEntry
 {
  /** The row index and column index for this entry in the sparse array */
@@ -47,7 +47,7 @@ of which represents one of the non-zero elements in the array. The entries repre
 stored in the list in no particular order. Each non-zero element is represented by exactly one entry in the list.
 
 
-```Java
+```java
 public class SparseArray
 {
  /** The number of rows and columns in the sparse array. */
@@ -89,7 +89,7 @@ Complete method getValueAt below.
 # my ans
 
 
-```Java
+```java
 public int getValueAt(int row, int col)
  { 
     return entries[row][col];
@@ -111,7 +111,7 @@ The sample object sparse from the beginning of the question is repeated for your
 # my ans
 
 
-```Java
+```java
  /** Removes the column col from the sparse array.
 * Precondition: 0  col < getNumCols()
  */
@@ -129,7 +129,7 @@ public void removeColumn(int col)
 # actual answer compiled into running code:
 
 
-```Java
+```java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -247,3 +247,7 @@ ok I had no idea what to make of this tbh but I will try.
 
 I know that this frq was testing knowledge of 2d array traversal, but after looking at the answer and doing some looking around I think this is more testing
 knowledge of objects in java. 
+
+we have  `public int getValue()` and other get methods which let us return our objects, as well as `public int getValueAt(int row, int col)` which gets a value using a row and col value which we got from getrow and getcol methods.
+
+remove column method looks like a key algorithm, and has parallels to delete methods within backend of project.

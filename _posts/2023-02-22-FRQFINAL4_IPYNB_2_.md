@@ -162,3 +162,13 @@ GroupList.main(null);
     15 is not contained in any group.
     25 is contained in at least one group.
 
+
+# reflection
+
+What is an interface?
+
+An interface is a completely "abstract class" that is used to group related methods with empty bodies.
+
+To access the interface methods, the interface must be "implemented" (kinda like inherited) by another class with the implements keyword (instead of extends). The body of the interface method is provided by the "implement" class:
+
+So this frq is really just implementation of classes and methods, with specific algorithms for iteration through arraylists.
