@@ -16,6 +16,7 @@ type: projecthelp
 # AP PREP PROGRESS
 
 All of my AP work is stored in my notebook, all linked in a certain row for easy access.    
+
 # end score
 
 I ended tri 2 with a 95
@@ -34,3 +35,9 @@ here I began implementing my CRUD functionality into the frontend.
 
 My main progress was focused on CRUD functionality for users. I spent most time on this functionality in a backend part of our project but I 
 did start spending some time getting the CRUD functionality to work in the frontend as well, though I ran into a problem that took up a lot of time.
+
+# key success from last trimester
+
+I was able to get username to successfully change with frontend input, but I keep running into a big problem which I discovered via debugging.
+Changing your email while you are logged in as that user breaks the backend, which I can't seem to pin down. I did find a part of the code that is causing this
+break to occur, but I am still trying to find solution. This might not even be worth fixing, but I would like to fix this if possible. 
