@@ -15,11 +15,10 @@ type: projecthelp
 
 # AP PREP PROGRESS
 
-All of my AP work is stored in my notebook, linked in a certain row for easy access.
-
+All of my AP work is stored in my notebook, all linked in a certain row for easy access.    
 # end score
 
-I ended tri 2 with a 95 I think
+I ended tri 2 with a 95
 
 # key commits
 
