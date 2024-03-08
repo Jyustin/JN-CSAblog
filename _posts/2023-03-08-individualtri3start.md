@@ -30,3 +30,8 @@ started developing real functionality for admin backend page. the rest of the ad
 [frontend update method](https://github.com/Codemaxxers/codemaxxerFrontend/commit/44830072a7353a240ec374519baab169557348e6)
 
 here I began implementing my CRUD functionality into the frontend. 
+
+# Project progress
+
+My main progress was focused on CRUD functionality for users. I spent most time on this functionality in a backend part of our project but I 
+did start spending some time getting the CRUD functionality to work in the frontend as well, though I ran into a problem that took up a lot of time.
