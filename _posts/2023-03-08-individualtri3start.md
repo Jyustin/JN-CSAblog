@@ -41,3 +41,4 @@ did start spending some time getting the CRUD functionality to work in the front
 I was able to get username to successfully change with frontend input, but I keep running into a big problem which I discovered via debugging.
 Changing your email while you are logged in as that user breaks the backend, which I can't seem to pin down. I did find a part of the code that is causing this
 break to occur, but I am still trying to find solution. This might not even be worth fixing, but I would like to fix this if possible. 
+
