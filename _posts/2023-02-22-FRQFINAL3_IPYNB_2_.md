@@ -13,7 +13,7 @@ type: APCSA
 A two-dimensional array of integers in which most elements are zero is called a sparse array. Because most elements have a value of zero, memory can be saved by storing only the non-zero values along with their row and column indexes. The following complete SparseArrayEntry class is used to represent non-zero elements in a sparse array. A SparseArrayEntry object cannot be modified after it has been constructed.
 
 
-```Java
+```java
 public class SparseArrayEntry
 {
  /** The row index and column index for this entry in the sparse array */
@@ -47,7 +47,7 @@ of which represents one of the non-zero elements in the array. The entries repre
 stored in the list in no particular order. Each non-zero element is represented by exactly one entry in the list.
 
 
-```Java
+```java
 public class SparseArray
 {
  /** The number of rows and columns in the sparse array. */
@@ -89,7 +89,7 @@ Complete method getValueAt below.
 # my ans
 
 
-```Java
+```java
 public int getValueAt(int row, int col)
  { 
     return entries[row][col];
@@ -111,7 +111,7 @@ The sample object sparse from the beginning of the question is repeated for your
 # my ans
 
 
-```Java
+```java
  /** Removes the column col from the sparse array.
 * Precondition: 0  col < getNumCols()
  */
@@ -129,7 +129,7 @@ public void removeColumn(int col)
 # actual answer compiled into running code:
 
 
-```Java
+```java
 import java.util.ArrayList;
 import java.util.List;
 
