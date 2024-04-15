@@ -16,7 +16,7 @@ Write an interface named NumberGroup that represents a group of integers. The in
 Write the complete NumberGroup interface. It must have exactly one method.
 
 
-```Java
+```java
 public class NumberGroup {
     public int[] group = new int[];
     public int contains(int[] groups) {
@@ -41,7 +41,7 @@ represents the group of integer values -3, -2, -1, 0, 1, 2.
 Write the complete Range class. Include all necessary instance variables and methods as well as a constructor that takes two int parameters. The first parameter represents the minimum value, and the second parameter represents the maximum value of the range. You may assume that the minimum is less than or equal to the maximum.
 
 
-```Java
+```java
 public class Range {
     public int start = 0;
     public int end = 10;
@@ -67,7 +67,7 @@ Complete method contains below
 
 
 
-```Java
+```java
 public boolean contains(int num) {
 
     int rangeMin = NumberGroup[0];
@@ -87,7 +87,7 @@ public boolean contains(int num) {
 # actual answer compiled into running code:
 
 
-```Java
+```java
 import java.util.ArrayList;
 
 // Part (a): Define the NumberGroup interface
