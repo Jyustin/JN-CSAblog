@@ -751,7 +751,7 @@ ChatUsers.main(null);
     user:derpy tokens: 200
     user:birdie tokens: 4000
     user:shiny tokens: 29312
-    Runtime of bubble sort: 13510 nanoseconds
+    Runtime of bubble sort: 4706 nanoseconds
     
     after selection sort:
     user:dash tokens: 100
@@ -759,7 +759,7 @@ ChatUsers.main(null);
     user:derpy tokens: 200
     user:birdie tokens: 4000
     user:shiny tokens: 29312
-    Runtime of selection sort: 7088 nanoseconds
+    Runtime of selection sort: 5291 nanoseconds
     
     after merge sort:
     user:dash tokens: 100
@@ -767,7 +767,7 @@ ChatUsers.main(null);
     user:derpy tokens: 200
     user:birdie tokens: 4000
     user:shiny tokens: 29312
-    Runtime of merge sort: 6661 nanoseconds
+    Runtime of merge sort: 5487 nanoseconds
     
     after insertion sort:
     user:dash tokens: 100
@@ -775,7 +775,7 @@ ChatUsers.main(null);
     user:derpy tokens: 200
     user:birdie tokens: 4000
     user:shiny tokens: 29312
-    Runtime of insertion sort: 3509 nanoseconds
+    Runtime of insertion sort: 2355 nanoseconds
     
     after quick sort:
     user:dash tokens: 100
@@ -783,5 +783,5 @@ ChatUsers.main(null);
     user:derpy tokens: 200
     user:birdie tokens: 4000
     user:shiny tokens: 29312
-    Runtime of quick sort: 2225 nanoseconds
+    Runtime of quick sort: 2737 nanoseconds
 
