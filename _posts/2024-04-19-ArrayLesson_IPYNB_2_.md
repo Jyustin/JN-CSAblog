@@ -503,3 +503,56 @@ arraysumEven.main(null);
 
     	at .(#23:1)
 
+
+# something extra: leetcode question breakdown
+
+You are given a string s consisting of lowercase letters and an integer k. We call a string t ideal if the following conditions are satisfied:
+
+t is a subsequence of the string s.
+The absolute difference in the alphabet order of every two adjacent letters in t is less than or equal to k.
+Return the length of the longest ideal string.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+
+Note that the alphabet order is not cyclic. For example, the absolute difference in the alphabet order of 'a' and 'z' is 25, not 1.
+
+
+
+
+```Java
+class Solution {
+    public int longestIdealString(String s, int k) {
+        // Initialize an array for dynamic programming with length 26, representing each lowercase letter
+        int dp[] = new int[26]; 
+        
+        // Iterate through each character of the input string
+        for (int i = 0; i < s.length(); i++) {
+            // Calculate the index of the current character in the alphabet
+            int a = s.charAt(i) - 'a';
+            // Initialize a variable to store the maximum value found
+            int mx = 0;
+            
+            // Iterate over a range of letters within a distance of 'k' from the current letter
+            for (int b = Math.max(0, a - k); b <= Math.min(25, a + k); b++)
+                // Update 'mx' to store the maximum value found in the 'dp' array for the letters in the range
+                mx = Math.max(mx, dp[b]);
+            
+            // Update the 'dp' array for the current letter with one more than the maximum value found
+            // This represents the length of the longest ideal string ending with the current letter
+            dp[a] = 1 + mx;
+        }
+        
+        // Return the maximum value in the 'dp' array, representing the length of the longest ideal string overall
+        return Arrays.stream(dp).max().getAsInt();
+    }
+}
+
+```
+
+# how are arrays used here?
+
+a dynamic programming array is used here for the alphabet, with dp being able to place a letter from s into the array at the spot it would be within the alphabet.
+
+then, we have a for loop which allows us to iterate a distance after our variable k and find the longest letter from our current character that still works as a subsequent.
+
+finally, dp is used at the end for the max for the length of longest ideal string.
