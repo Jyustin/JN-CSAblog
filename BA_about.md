@@ -4,4 +4,4 @@ title: About Me
 permalink: /about/
 ---
 
-Justin's CSA blog
+This is Justin's CSA lab notebook, mainly for reference.

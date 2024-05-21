@@ -49,7 +49,7 @@ link to group blog:
 # compareTo implementation
 
 
-```Java
+```java
 import java.util.*;
 
 public abstract class Collectable implements Comparable<Collectable> {
@@ -425,7 +425,7 @@ How?
 
 
 
-```Java
+```java
 import java.util.*;
 
 public abstract class Collectable implements Comparable<Collectable> {

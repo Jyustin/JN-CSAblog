@@ -2,8 +2,10 @@
 layout: home
 search_exclude: true
 ---
-A modified blog for CSA Based on Fastpages- Tirth Thakkar & Haseeb Beg   
 
+Lab notebook for AP Computer Science A class 2023-2024
+
+By: Justin Nguyen
 
 
 # Posts
