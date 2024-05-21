@@ -20,7 +20,7 @@ the sorting was well explained and understandable.
 
 The physical performance was pretty good.
 
-I think our idea was most entertaining
+I think our idea was most entertaining out of all other groups, especially in thanks to the script we had.
 
 WORK ON:
 
@@ -31,6 +31,10 @@ Audience interaction could have been emphasized, our performance didn't have any
 I think since a lot of groups had a rap we could have added something like that to make our project feel more "fun".
 
 I have musical skill so I could have accomplished this but I didn't really have any ideas that would be better than using professional music.
+
+Reflection:
+
+Good planning and having a strong script was ultimately what carried us and even gave us the chance to win. we definetly wouldn't have succeeded if we hadn't had a strong script and a strong plan before we even started practicing. I also had an idea at the time for our performance but I threw it away in preference for our teams's script because I realized it was more suitable for the audience, so I learned that sometimes you need to put away pride and do what is best for the team in the end.
 
 practice image
 ![]({{site.baseurl}}/images/practice.jpg)
